@@ -1,9 +1,9 @@
 #include <iostream>
 
-static int count = 0;
-
 void counting_function( )
 {
+    static int count = 0;
+
     count++;
 
     std::cout << "function called at " << count << std::endl;
